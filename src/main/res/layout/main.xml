@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:paddingRight="5px"
+		android:textSize="28sp"
+		android:text="Please stand on the X mark" />
+
+	<TextView
+		android:id="@+id/status"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:paddingRight="5px"
+		android:textSize="22sp"
+		android:text="Searching..." />
+	<RelativeLayout
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content">
+
+		<TextView
+			android:id="@+id/IR1readinglabel"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:paddingRight="5px"
+			android:text="IR1 Analog Reading" />
+
+		<TextView
+			android:id="@+id/IR1reading"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_below="@+id/IR1readinglabel"
+			android:text="0.00"
+			android:textSize="72sp" />
+
+		<TextView
+			android:id="@+id/IR2readinglabel"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_toRightOf="@+id/IR1readinglabel"
+			android:paddingRight="5px"
+			android:paddingLeft="200px"
+			android:text="IR2 Analog Reading" />
+
+		<TextView
+			android:id="@+id/IR2reading"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_below="@+id/IR2readinglabel"
+			android:layout_toRightOf="@+id/IR1reading"
+			android:paddingLeft="160px"
+			android:text="0.00"
+			android:textSize="72sp" />
+	</RelativeLayout>
+
+	<RelativeLayout
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content">
+
+		<TextView
+			android:id="@+id/servoLabel"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentLeft="true"
+			android:layout_alignParentTop="true"
+			android:text="Servo Position" />
+
+		<TextView
+			android:id="@+id/servoReading"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_below="@+id/servoLabel"
+			android:text="0"
+			android:textSize="72sp" />
+
+	</RelativeLayout>
+
+	<ImageView
+		android:id="@+id/imageView1"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:src="@drawable/micro"></ImageView>
+</LinearLayout>
